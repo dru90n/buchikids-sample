@@ -17,11 +17,10 @@
   <!-- Mobile Container (iPhone Width) -->
   <div class="w-full max-w-[393px] flex flex-col gap-5">
 
-    <!-- Header / Profile -->
+    <!-- Header / Profile dengan Logo -->
     <div class="flex flex-col items-center text-center mt-2">
-      <div class="w-20 h-20 rounded-full bg-[#E2EFE7] border-2 border-[#A8D5BA] flex items-center justify-center shadow-sm overflow-hidden">
-        <!-- Menggunakan gambar logo jika ada, atau teks fallback -->
-        <span class="font-bold text-xl text-[#2E5A44]">BK</span>
+      <div class="w-24 h-24 rounded-full bg-white border-2 border-[#A8D5BA] flex items-center justify-center shadow-sm overflow-hidden p-1">
+        <img src="images/logo.png" alt="Logo Buchi Kids" class="w-full h-full object-contain rounded-full">
       </div>
       <h1 class="font-bold text-xl text-[#1A382B] mt-3">Buchi Kids Online</h1>
       <p class="text-xs text-[#557C69]">Perlengkapan Bayi & Anak • Malang</p>
@@ -69,7 +68,7 @@
         </button>
       </div>
 
-      <!-- Store 3 (REVISI: Sawojajar) -->
+      <!-- Store 3 (Sawojajar) -->
       <div class="bg-white p-3.5 rounded-xl shadow-sm flex items-center justify-between">
         <div>
           <div class="font-bold text-xs text-[#224A36]">3. Cabang Sawojajar</div>
@@ -88,9 +87,7 @@
       <div class="grid grid-cols-2 gap-3">
         <!-- Product 1 -->
         <div class="bg-white p-3 rounded-xl shadow-sm flex flex-col justify-between">
-          <div class="w-full h-28 bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 text-[10px] mb-2 overflow-hidden">
-            <img src="images/popok.png" alt="Popok Bayi Premium Set" class="w-full h-28 object-cover rounded-lg mb-2">
-          </div>
+          <img src="images/produk001.jpg" alt="Popok Bayi Premium Set" class="w-full h-32 object-cover rounded-lg mb-2">
           <div class="font-bold text-xs text-slate-800 line-clamp-1">Popok Bayi Premium Set</div>
           <div class="font-bold text-xs text-[#2E5A44] my-1">Rp 85.000</div>
           <button onclick="orderProduct('Popok Bayi Premium Set')" class="w-full bg-[#2E5A44] text-white text-[10px] font-semibold py-1.5 rounded-md text-center hover:bg-[#224A36]">
@@ -100,9 +97,7 @@
 
         <!-- Product 2 -->
         <div class="bg-white p-3 rounded-xl shadow-sm flex flex-col justify-between">
-          <div class="w-full h-28 bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 text-[10px] mb-2 overflow-hidden">
-            [ Foto Produk ]
-          </div>
+          <img src="images/produk002.jpg" alt="Stroller Baby Foldable" class="w-full h-32 object-cover rounded-lg mb-2">
           <div class="font-bold text-xs text-slate-800 line-clamp-1">Stroller Baby Foldable</div>
           <div class="font-bold text-xs text-[#2E5A44] my-1">Rp 29.900</div>
           <button onclick="orderProduct('Stroller Baby Foldable')" class="w-full bg-[#2E5A44] text-white text-[10px] font-semibold py-1.5 rounded-md text-center hover:bg-[#224A36]">
