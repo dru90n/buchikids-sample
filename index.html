@@ -1,1 +1,151 @@
-<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" /><link href="./css/main.css" rel="stylesheet" /><title>Document</title></head><body><div class="v2_2"><div class="v10_2"><div class="v10_3"></div><div class="v10_72"><div class="v10_4"></div><span class="v10_6">Buchi Kids Online</span><span class="v10_7">Perlengkapan Bayi & Anak • Malang</span></div><div class="v10_71"><div class="v10_8"></div><span class="v10_9">💬 Order via WhatsApp (Otomatis)</span><span class="v10_10">Tanpa antre, terhubung ke admin aktif</span></div><div class="v10_69"><div class="v10_11"></div><span class="v10_12">🟢 Tokopedia</span></div><div class="v10_67"><div class="v10_13"></div><span class="v10_14">🟠 Shopee</span></div><span class="v10_15">📍 Lokasi 3 Cabang Toko Fisik</span><div class="v10_48"><div class="v10_16"></div><span class="v10_17">1. Cabang Soekarno Hatta</span><span class="v10_18">Jl. Soekarno Hatta, Malang</span><div class="v10_19"></div><span class="v10_20">Maps📍</span></div><div class="v10_49"><div class="v10_21"></div><span class="v10_22">2. Cabang Panglima Sudirman</span><span class="v10_23">Ruko Panglima Sudirman, Malang</span><div class="v10_24"></div><span class="v10_25">Maps 📍️</span></div><div class="v10_50"><div class="v10_26"></div><span class="v10_27">3. Cabang Sawojajar</span><span class="v10_28">Raya Sawojajar Mas, Malang</span><div class="v10_29"></div><span class="v10_30">Maps 📍️</span></div><span class="v10_31">🔥 Promo Best Seller</span><div class="v10_32"></div><div class="v10_33"></div><span class="v10_34">[ Foto Produk ]</span><span class="v10_35">Popok Bayi Premium Set</span><span class="v10_36">Rp 85.999</span><div class="v10_37"></div><span class="v10_38">Pesan via WA</span><div class="v10_39"></div><div class="v10_40"></div><span class="v10_41">[ Foto Produk ]</span><span class="v10_42">Stroller Baby Foldable</span><span class="v10_43">Rp 29.999</span><div class="v10_44"></div><span class="v10_45">Pesan via WA</span><span class="v10_46">© Buchi Kids Online Demo Landing Page</span></div></div></body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buchi Kids Online - Pusat Perlengkapan Bayi & Anak</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#F4F9F5] text-slate-800 min-h-screen flex justify-center py-6 px-4">
+
+  <!-- Mobile Container (iPhone Width) -->
+  <div class="w-full max-w-[393px] flex flex-col gap-5">
+
+    <!-- Header / Profile -->
+    <div class="flex flex-col items-center text-center mt-2">
+      <div class="w-20 h-20 rounded-full bg-[#E2EFE7] stroke-[#A8D5BA] border-2 border-[#A8D5BA] flex items-center justify-center shadow-sm">
+        <span class="font-bold text-xl text-[#2E5A44]">BK</span>
+      </div>
+      <h1 class="font-bold text-xl text-[#1A382B] mt-3">Buchi Kids Online</h1>
+      <p class="text-xs text-[#557C69]">Perlengkapan Bayi & Anak • Malang</p>
+    </div>
+
+    <!-- Main CTA: Smart WhatsApp Rotator -->
+    <button onclick="redirectWA()" class="w-full bg-[#2E5A44] hover:bg-[#224A36] text-white py-3.5 px-4 rounded-2xl shadow-md transition active:scale-95 text-center">
+      <div class="font-bold text-sm">💬 Order via WhatsApp (Otomatis)</div>
+      <div class="text-[10px] text-[#A8D5BA] mt-0.5">Tanpa antre, terhubung ke admin aktif</div>
+    </button>
+
+    <!-- Marketplace Grid -->
+    <div class="grid grid-cols-2 gap-3">
+      <a href="https://tokopedia.com" target="_blank" class="bg-white border border-[#E2EFE7] py-3 rounded-xl text-center font-semibold text-xs text-[#224A36] shadow-sm hover:bg-slate-50 transition">
+        🟢 Tokopedia
+      </a>
+      <a href="https://shopee.co.id" target="_blank" class="bg-white border border-[#E2EFE7] py-3 rounded-xl text-center font-semibold text-xs text-[#EE4D2D] shadow-sm hover:bg-slate-50 transition">
+        🟠 Shopee
+      </a>
+    </div>
+
+    <!-- Section: 3 Offline Stores -->
+    <div class="flex flex-col gap-2.5">
+      <h2 class="font-bold text-sm text-[#1A382B]">📍 Lokasi 3 Cabang Toko Fisik</h2>
+
+      <!-- Store 1 -->
+      <div class="bg-white p-3.5 rounded-xl shadow-sm flex items-center justify-between">
+        <div>
+          <div class="font-bold text-xs text-[#224A36]">1. Cabang Soekarno Hatta</div>
+          <div class="text-[10px] text-gray-500">Jl. Soekarno Hatta, Malang</div>
+        </div>
+        <button onclick="openSmartMaps('-7.9421', '112.6200', 'Buchi Kids Soekarno Hatta Malang')" class="bg-[#E2EFE7] text-[#2E5A44] text-[11px] font-semibold px-3 py-1.5 rounded-lg hover:bg-[#d0e5d8]">
+          Maps 📍
+        </button>
+      </div>
+
+      <!-- Store 2 -->
+      <div class="bg-white p-3.5 rounded-xl shadow-sm flex items-center justify-between">
+        <div>
+          <div class="font-bold text-xs text-[#224A36]">2. Cabang Panglima Sudirman</div>
+          <div class="text-[10px] text-gray-500">Ruko Panglima Sudirman, Malang</div>
+        </div>
+        <button onclick="openSmartMaps('-7.9781', '112.6340', 'Buchi Kids Panglima Sudirman Malang')" class="bg-[#E2EFE7] text-[#2E5A44] text-[11px] font-semibold px-3 py-1.5 rounded-lg hover:bg-[#d0e5d8]">
+          Maps 📍
+        </button>
+      </div>
+
+      <!-- Store 3 -->
+      <div class="bg-white p-3.5 rounded-xl shadow-sm flex items-center justify-between">
+        <div>
+          <div class="font-bold text-xs text-[#224A36]">3. Cabang Ronggowarsito</div>
+          <div class="text-[10px] text-gray-500">Jl. Ronggowarsito, Malang</div>
+        </div>
+        <button onclick="openSmartMaps('-7.9811', '112.6290', 'Buchi Kids Ronggowarsito Malang')" class="bg-[#E2EFE7] text-[#2E5A44] text-[11px] font-semibold px-3 py-1.5 rounded-lg hover:bg-[#d0e5d8]">
+          Maps 📍
+        </button>
+      </div>
+    </div>
+
+    <!-- Section: Mini Catalog -->
+    <div class="flex flex-col gap-2.5">
+      <h2 class="font-bold text-sm text-[#1A382B]">🔥 Promo Best Seller</h2>
+      
+      <div class="grid grid-cols-2 gap-3">
+        <!-- Product 1 -->
+        <div class="bg-white p-3 rounded-xl shadow-sm flex flex-col justify-between">
+          <div class="w-full h-24 bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 text-[10px] mb-2">
+            [ Foto Produk ]
+          </div>
+          <div class="font-bold text-xs text-slate-800 line-clamp-1">Baju Bayi Premium Set</div>
+          <div class="font-bold text-xs text-[#2E5A44] my-1">Rp 75.000</div>
+          <button onclick="orderProduct('Baju Bayi Premium Set')" class="w-full bg-[#2E5A44] text-white text-[10px] font-semibold py-1.5 rounded-md text-center">
+            Pesan via WA
+          </button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-white p-3 rounded-xl shadow-sm flex flex-col justify-between">
+          <div class="w-full h-24 bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 text-[10px] mb-2">
+            [ Foto Produk ]
+          </div>
+          <div class="font-bold text-xs text-slate-800 line-clamp-1">Stroller Baby Foldable</div>
+          <div class="font-bold text-xs text-[#2E5A44] my-1">Rp 450.000</div>
+          <button onclick="orderProduct('Stroller Baby Foldable')" class="w-full bg-[#2E5A44] text-white text-[10px] font-semibold py-1.5 rounded-md text-center">
+            Pesan via WA
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center text-[10px] text-gray-400 mt-4 mb-2">
+      © Buchi Kids Online Demo Landing Page
+    </div>
+
+  </div>
+
+  <!-- Smart Scripts (Rotator WA & Smart Maps iOS/Android) -->
+  <script>
+    const listAdmin = ["628113506611", "628113409922", "6281935242555"];
+
+    function getAdminWA() {
+      return listAdmin[Math.floor(Math.random() * listAdmin.length)];
+    }
+
+    function redirectWA() {
+      const admin = getAdminWA();
+      const text = encodeURIComponent("Halo Buchi Kids, saya mau tanya-tanya produk / order produk nih...");
+      window.open(`https://wa.me/${admin}?text=${text}`, '_blank');
+    }
+
+    function orderProduct(namaProduk) {
+      const admin = getAdminWA();
+      const text = encodeURIComponent(`Halo Buchi Kids, saya mau order produk: ${namaProduk}`);
+      window.open(`https://wa.me/${admin}?text=${text}`, '_blank');
+    }
+
+    function openSmartMaps(lat, lng, query) {
+      const isApple = /iPhone|iPad|iPod|Macintosh/i.test(navigator.userAgent);
+      if (isApple) {
+        window.open(`http://maps.apple.com/?q=${encodeURIComponent(query)}&ll=${lat},${lng}`, '_blank');
+      } else {
+        window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`, '_blank');
+      }
+    }
+  </script>
+</body>
+</html>
